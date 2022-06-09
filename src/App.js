@@ -4,11 +4,16 @@ import SmallBox from './SmallBox';
 import BigBox from './components/BigBox';
 
 function App() {
+  function handleClick(e){
+    console.log(e.target)
+  }
 
 
   return (
     <div className="app">
-      <SmallBox  />
+      <SmallBox />
+
+      <button onClick={(e) => handleClick(e)}>click me</button>
     </div>
   );
 }
