@@ -5,6 +5,9 @@ body{
   justify-content: center;
   
 }
+.app{
+  text-align: center;
+}
 .boxcontainer{
   margin-top: 20%;
   text-align: center;
@@ -29,8 +32,22 @@ body{
 }
 
 .selectedcolor{
+  /* text-align: center;
   width: 100px;
-  height: 100px;
+  height: 100px; */
+  width: 70px;
+  height: 70px;
+  text-align: center;
     border: 2px solid black;
 
+}
+
+.bigboxes{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.selectcontainer{
+  text-align: center;
+  margin: 50px;
 }

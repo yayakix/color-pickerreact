@@ -16,9 +16,11 @@ function ColorSelected(props) {
       >
         {value}
       </div>
-      <BigBox color={value} />
-      <BigBox color={value} />
-      <BigBox color={value} />
+      <div className="bigboxes">
+        <BigBox color={value} />
+        <BigBox color={value} />
+        <BigBox color={value} />
+      </div>
     </>
   );
 }

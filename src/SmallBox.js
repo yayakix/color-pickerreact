@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import ColorSelected from "./ColorSelected";
 
     function makeColor() {
-      const randomBetween = (min, max) =>
+      const randomNum = (min, max) =>
         min + Math.floor(Math.random() * (max - min + 1));
-      const r = randomBetween(0, 255);
-      const g = randomBetween(0, 255);
-      const b = randomBetween(0, 255);
+      const r = randomNum(0, 255);
+      const g = randomNum(0, 255);
+      const b = randomNum(0, 255);
       return `rgb(${r},${g},${b})`;
     }
     const colors = [];
@@ -35,11 +35,11 @@ function SmallBox(props) {
   const [currColor, setCurrColor] = useState("rgb(255, 255, 255)");
 
     function makeColor() {
-      const randomBetween = (min, max) =>
+      const randomNum = (min, max) =>
         min + Math.floor(Math.random() * (max - min + 1));
-      const r = randomBetween(0, 255);
-      const g = randomBetween(0, 255);
-      const b = randomBetween(0, 255);
+      const r = randomNum(0, 255);
+      const g = randomNum(0, 255);
+      const b = randomNum(0, 255);
       return `rgb(${r},${g},${b})`;
     }
     const colors = [];
@@ -84,11 +84,13 @@ function SmallBox(props) {
       <div onClick={(e) => handleClick(e)} className="boxcontainer">
         {colorBoxes}
       </div>
-      <h2>Selected Color</h2>
-      <ColorSelected color={currColor} />
-      <button id="new" onClick={(e) => newColors(e)}>
-        Generate more colors
-      </button>
+      <div className="selectcontainer">
+        <h2>Selected Color</h2>
+        <button id="new" onClick={(e) => newColors(e)}>
+          Generate more colors
+        </button>
+        <ColorSelected color={currColor} />
+      </div>
     </>
   );
 }
