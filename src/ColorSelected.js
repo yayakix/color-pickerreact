@@ -8,7 +8,14 @@ function ColorSelected(props) {
 
   return (
     <>
-      <div className="selectedcolor">{value}</div>
+      <div
+        className="selectedcolor"
+        style={{
+          backgroundColor: value,
+        }}
+      >
+        {value}
+      </div>
       <BigBox color={value} />
       <BigBox color={value} />
       <BigBox color={value} />

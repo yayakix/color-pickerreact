@@ -6,7 +6,7 @@ body{
   
 }
 .boxcontainer{
-  /* margin-top: 20%; */
+  margin-top: 20%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -26,4 +26,11 @@ body{
 }
 .bigboxcontainer{
   display: inline-block
+}
+
+.selectedcolor{
+  width: 100px;
+  height: 100px;
+    border: 2px solid black;
+
 }
