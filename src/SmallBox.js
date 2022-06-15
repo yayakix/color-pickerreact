@@ -2,12 +2,6 @@ import React, { useState } from "react";
 import ColorSelected from "./ColorSelected";
 
 
-const colors = [];
-
-for (let i = 0; i < 64; i++) {
-  colors.push(" ");
-}
-
 function SmallBox(props) {
   const [currColor, setCurrColor] = useState("rgb(255, 255, 255)");
 
@@ -39,7 +33,6 @@ function SmallBox(props) {
   const [colorBoxes, setcolorBoxes] = useState(colorboxes);
 
   function newColors(e) {
-    console.log(colorboxes);
     setcolorBoxes(colorboxes);
   }
 
