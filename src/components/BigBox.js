@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function BigBox(props) {
     const [boxColor, setBoxColor] = useState("white");
-    // setCurrColor("red");
 function handleClick(e){
     setBoxColor(props.color)
 }
