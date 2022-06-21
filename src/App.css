@@ -32,22 +32,31 @@ body{
 }
 
 .selectedcolor{
-  /* text-align: center;
-  width: 100px;
-  height: 100px; */
   width: 70px;
   height: 70px;
   text-align: center;
-    border: 2px solid black;
+  border: 2px solid black;
+  position: absolute;
+  right: 48%;
+  top: 56%;
+  /* left: 0; */
+  
 
 }
 
 .bigboxes{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .selectcontainer{
   text-align: center;
   margin: 50px;
+}
+
+.newgrid{
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
 }
