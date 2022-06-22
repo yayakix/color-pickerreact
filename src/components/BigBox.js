@@ -8,7 +8,7 @@ function handleClick(e){
 
   return (
     <>
-      <div className="bigboxcontainer">
+      {/* <div className="bigboxcontainer"> */}
         <div
           onClick={(e) => handleClick(e)}
           className="bigbox"
@@ -16,7 +16,7 @@ function handleClick(e){
             backgroundColor: boxColor,
           }}
         ></div>
-      </div>
+      {/* </div> */}
     </>
   );
 }
