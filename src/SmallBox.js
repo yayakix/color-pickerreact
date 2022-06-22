@@ -48,10 +48,11 @@ function SmallBox(props) {
         {colorBoxes}
       </div>
       <div className="selectcontainer">
-        <h2>Selected Color</h2>
         <button id="new" onClick={(e) => newColors(e)}>
           Generate more colors
         </button>
+        <h2>Selected Color</h2>
+
         <ColorSelected color={currColor} />
       </div>
     </>

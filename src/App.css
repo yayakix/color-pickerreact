@@ -9,7 +9,7 @@ body{
   text-align: center;
 }
 .boxcontainer{
-  margin-top: 20%;
+  margin-top: 5%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -23,31 +23,46 @@ body{
 }
 
 .bigbox{
-  border: 2px solid black;
-  width: 100px;
-  height: 100px;
+  border: 1px solid rgb(134, 124, 124);
+  width: 50px;
+  height: 50px;
 }
 .bigboxcontainer{
   display: inline-block
 }
 
 .selectedcolor{
-  /* text-align: center;
-  width: 100px;
-  height: 100px; */
   width: 70px;
   height: 70px;
   text-align: center;
-    border: 2px solid black;
+  border: 2px solid black;
+  position: absolute;
+  right: 48%;
+  margin-top: 10px;
+  /* top: 56%; */
+  /* left: 0; */
+  
 
 }
 
-.bigboxes{
+/* .bigboxes{
   text-align: center;
-  margin-top: 50px;
-}
+  margin-top: 100px;
+} */
 
 .selectcontainer{
   text-align: center;
   margin: 50px;
 }
+
+.boxgrid{
+  margin-top: 150px;
+  max-width: 800px;
+  text-align: center;
+position: relative;
+	display: flex;
+	flex-flow: row wrap;
+}
+.onebox{
+width: 50px;}
+
